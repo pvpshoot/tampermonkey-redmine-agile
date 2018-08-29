@@ -46,8 +46,8 @@
                     .css({ color: "#fff" });
                   $(card)
                     .find(".attributes")
-                    .css({ color: "#fff" });  
-                }
+                    .css({ color: "#fff" });
+                };
 
                 $(card).css({
                   "background-color": "red"
@@ -68,17 +68,19 @@
 
               if (atr === "Immediate") {
                 function loop() {
+                  // $(card).css({
+                  //   "background-image":
+                  //     "radial-gradient(circle, #ff0000, #f56d00, #d6a700, #a0d600, #00ff0b)"
+                  // });
                   $(card).css({
-                    "background-image":
-                      "radial-gradient(circle, #ff0000, #f56d00, #d6a700, #a0d600, #00ff0b)"
+                    "background-color": "red"
                   });
 
                   $(card).animate(
                     {
-                      "background-image":
-                        "radial-gradient(circle, #d300ff, #ff00a8, #ff5250, #ffb800, #f4ff00)"
+                      "background-color": "white"
                     },
-                    5000,
+                    300,
                     "linear",
                     () => {
                       loop();
