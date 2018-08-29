@@ -37,6 +37,18 @@
               }
 
               if (atr === "Urgent") {
+                const loop = () => {
+                  $(card).css({
+                    "background-color": "red"
+                  });
+                  $(card)
+                    .find("a")
+                    .css({ color: "#fff" });
+                  $(card)
+                    .find(".attributes")
+                    .css({ color: "#fff" });  
+                }
+
                 $(card).css({
                   "background-color": "red"
                 });
@@ -61,7 +73,7 @@
                       "radial-gradient(circle, #ff0000, #f56d00, #d6a700, #a0d600, #00ff0b)"
                   });
 
-                  $("#clouds").animate(
+                  $(card).animate(
                     {
                       "background-image":
                         "radial-gradient(circle, #d300ff, #ff00a8, #ff5250, #ffb800, #f4ff00)"
